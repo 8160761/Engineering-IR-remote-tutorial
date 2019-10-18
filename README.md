@@ -1,7 +1,12 @@
 # Engineering-IR-remote-tutorial
 #Tutorial
 
+
 Firstly we need to add the IR remote library
+You need to add the IR library to the list of libraries in the arduino coding software.
+The library can be found 
+[here](htts://github.com/z3t0/Arduino-IRremote)
+
 ```cpp
 
 #include <IRremote.h>
@@ -44,6 +49,8 @@ void setup()
 }
 ```
 
+We need to change the value to an unasigned int to that switch case may be used
+Switch case allows you to run multiple conditions after each other, checking each one to see if its true.
 ```cpp
 
 void loop() {
