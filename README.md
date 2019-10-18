@@ -5,7 +5,7 @@
 Firstly we need to add the IR remote library
 You need to add the IR library to the list of libraries in the arduino coding software.
 The library can be found 
-[here](htts://github.com/z3t0/Arduino-IRremote)
+[here](https://github.com/z3t0/Arduino-IRremote)
 
 ```cpp
 
