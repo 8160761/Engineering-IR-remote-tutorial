@@ -5,7 +5,8 @@
 Firstly we need to add the IR remote library
 You need to add the IR library to the list of libraries in the arduino coding software.
 The library can be found 
-[here](https://github.com/z3t0/Arduino-IRremote)
+[here](https://github.com/z3t0/Arduino-IRremote) 
+then added to arduino by selecting sketch >> include library >> add zip library
 
 ```cpp
 
@@ -57,6 +58,10 @@ void loop() {
   if (irrecv.decode(&results))
     unsigned int value = results.value;
     Serial.println(value);
+    
+```
+These statements check to see if each one is true before moving on to the next. for example if the value = 2295 then the red light will turn on for half a second.
+```cpp
    
     switch (value) {
       case 2295:
@@ -64,8 +69,7 @@ void loop() {
         delay(500);
         digitalWrite(redLed, LOW);
         break;
-     
-     
+          
       case 18615:
         digitalWrite(greenLed, HIGH);
         delay(500);
